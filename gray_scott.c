@@ -5,6 +5,7 @@
 #define DIFF_U 2e-8
 #define DIFF_V 1e-8
 
+//F(u,v,t,x) the right hand side of the first equation du/dt
 DEFINE_SOURCE(u_source,c ,t ,dS , eqn)
 {
 real u=C_UDSI(c,t,0);
@@ -16,7 +17,7 @@ return source;
 
 
 }
-
+//G(u,v,t,x) the right hand side of the second equation i.e dv/dt
 DEFINE_SOURCE(v_source,c ,t ,dS , eqn)
 {
 real u=C_UDSI(c,t,0);
@@ -39,11 +40,10 @@ DEFINE_DIFFUSIVITY(uds_diff, c, t, i)
 }
 
 
-
+//Inital condition setting amount of U,V in cells
 DEFINE_INIT(init_gray_scott, d)
 {
-	//just initializing square in the middle for potentially interesting non symmetric patterns
-	//do random 
+ 
     Thread *t;
     cell_t c;
     real x[ND_ND];
