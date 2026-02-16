@@ -22,4 +22,4 @@ This model can reproduce patterns similar to those observed on animal skin or fu
 
 ## Some pictures
 ![Pattern for F=0.038, K-0.061](imgfiles/gs3861.png)
-<img src="images/pattern.png" alt="Pattern formation" width="400">
+<img src="imgfiles/gs3861.png" alt="Pattern formation" width="400">
