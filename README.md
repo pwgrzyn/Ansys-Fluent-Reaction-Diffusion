@@ -9,3 +9,12 @@ Simulation of Turing instability using Ansys fluent
 5. Initialize the initial conditions and use contours of u or v(in Results tab on the left side) to verify whether the initialization is correct.
 6. If everything is correct go to calculation set time step size and amount of steps(in solution tab on the left side).
 7. Press calculate and watch pattern creation. (Currently animation is set to update every 10 time steps as it is quite memory consuming if you want change it go to Calculation Activities and edit v-animation)
+
+
+## What is Turing instability?
+Turing instability is a biological phenomenon that can be explored in systems of reaction-diffusion equations. You can read more about it in my 2024 conference poster (in Polish) below:
+[Click Here](imgfiles/poster.pdf)
+
+In short, this phenomenon occurs when a system is stable without diffusion but becomes unstable when diffusion is included. For certain sets of parameters, it leads to the formation of spatial patterns.
+
+This model can reproduce patterns similar to those observed on animal skin or fur. For some parameters, the resulting patterns clearly resemble those naturally occurring on animal coats.
