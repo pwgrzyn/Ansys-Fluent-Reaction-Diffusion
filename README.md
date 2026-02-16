@@ -24,6 +24,8 @@ This model can reproduce patterns similar to those observed on animal skin or fu
 <img src="imgfiles/gs3861.png" alt="Pattern formation" width="400"> **Parameters:** F = 0.038, K = 0.061 <img src="imgfiles/gs5562.png" alt="Pattern formation" width="400"> **Parameters:** F = 0.055, K = 0.062
 <img src="imgfiles/u46gs594.png" alt="Pattern formation2" width="400"> **Parameters:** F = 0.046, K = 0.0594
 <img src="imgfiles/gs6261.png" alt="Pattern formation3" width="400"> **Parameters:** F = 0.062, K = 0.061
+
+
 These pictures were taken when the system was almost stabilized.
 Changes in the patterns were minimal, which is the desirable effect. Most of the pattern formation on skin or fur occurs during embryo development, and later changes are very small. The initial conditions for those pictures were different. For very non symmetric patterns i suggest setting the v-substance concentration at random. Also it is worth noticing that often patterns that occur during the process are way more interesting that the final results.
 
