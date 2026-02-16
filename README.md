@@ -29,3 +29,7 @@ Changes in the patterns were minimal, which is the desirable effect. Most of the
 
 ## Some more information
 Transport equation for User-defined-scalars in Ansys Fluent can be found [Here](https://www.afs.enea.it/project/neptunius/docs/fluent/html/ug/node342.htm)
+
+About parameters which generate interesting spatial patterns you can read [Here](https://www.mrob.com/pub/comp/xmorphia/pearson-classes.html)
+
+There are more reaction diffusion systems however Gray-Scott is quite popular it is not easy to find parameters to create interesing patterns in other models. In order to change model you need to update source terms in the file gray_scott.c
