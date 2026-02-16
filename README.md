@@ -23,7 +23,7 @@ This model can reproduce patterns similar to those observed on animal skin or fu
 ## Some pictures
 <img src="imgfiles/gs3861.png" alt="Pattern formation" width="400">
 Picture of the system for parameters F=0.038 and K=0.061
-<img src="imgfiles/gs5562.png" alt="Pattern formation" width="400">
+<img src="imgfiles/gs5562.png" alt="Pattern formation1" width="400">
 Picture of the system for parameters F=0.055 and K=0.062
 
 
