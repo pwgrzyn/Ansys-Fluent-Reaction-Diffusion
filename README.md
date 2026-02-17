@@ -1,4 +1,4 @@
-# Ansys-Fluent-Gray-Scott-
+# Ansys-Fluent-Reaction-Diffusion
 Simulation of Turing instability using Ansys fluent on a Square(where left and right border are connected and upper and lower aswell)
 
 ## Gray-Scott Model
@@ -46,3 +46,15 @@ Transport equation for User-defined-scalars in Ansys Fluent can be found [Here](
 About parameters which generate interesting spatial patterns you can read [Here](https://www.mrob.com/pub/comp/xmorphia/pearson-classes.html)
 
 There are more reaction diffusion systems however Gray-Scott is quite popular it is not easy to find parameters to create interesing patterns in other models. In order to change model you need to update source terms in the file gray_scott.c
+
+## Spiral-Waves model
+Mathematical model of nonlinear oscilator. Levels of u and v here describe deviations from the stationarity.
+$$
+\begin{aligned}
+\frac{\partial u}{\partial t} &= D_u \nabla^2 u +au - (u+bv)(u^2+v^2) \\
+\frac{\partial v}{\partial t} &= D_v \nabla^2 v + av + (bu-v)(u^2+v^2)
+\end{aligned}
+$$
+
+## Simulation Result
+<img src="imgfiles/BW.png" alt="Pattern formation112" width="400"> **Parameters:** a = 3, b = -1, $D_u=2e-9$ $D_v=1e-8$ 
