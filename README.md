@@ -1,6 +1,13 @@
 # Ansys-Fluent-Gray-Scott-
 Simulation of Turing instability using Ansys fluent on a Square(where left and right border are connected and upper and lower aswell)
 
+$$
+\begin{aligned}
+\frac{\partial u}{\partial t} &= D_u \nabla^2 u - uv^2 + F(1-u) \\
+\frac{\partial v}{\partial t} &= D_v \nabla^2 v + uv^2 - (F+k)v
+\end{aligned}
+$$
+
 ## How To Set this up in Ansys Student 2025
 1. Create new Ansys Fluent project
 2. Head up straight to Setup cell and open it
