@@ -50,6 +50,7 @@ There are more reaction diffusion systems however Gray-Scott is quite popular it
 ## Spiral-Waves model
 Mathematical model of nonlinear oscilator. Levels of u and v here describe deviations from the stationarity. Read more about in Mathematical Biology
 II: Spatial Models and Biomedical Applications Third Edition by J.D. Murray, also [Here](https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction)
+
 $$
 \begin{aligned}
 \frac{\partial u}{\partial t} &= D_u \nabla^2 u +au - (u+bv)(u^2+v^2) \\
