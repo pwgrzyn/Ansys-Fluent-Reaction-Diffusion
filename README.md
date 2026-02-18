@@ -59,7 +59,10 @@ $$
 
 ## Simulation Result
 After time T=80
+
 <img src="imgfiles/spiralwavesbegin.png" alt="Pattern formation112" width="400"> **Parameters:** a = 3, b = -1, $D_u=2e-9$ $D_v=1e-8$ 
+
 After time T=500
+
 <img src="imgfiles/spiralwaves.png" alt="Pattern formation112" width="400">
 
