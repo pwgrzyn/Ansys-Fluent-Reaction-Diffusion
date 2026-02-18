@@ -5,7 +5,7 @@ Simulation of Turing instability using Ansys fluent on a Square(where left and r
 1. Create new Ansys Fluent project
 2. Straight up open Setup
 3. Import file Setup.cas.h5 using Case import in Fluent. Setup.cas.h5 file contains information about mesh and all solver settings that are needed to solve the Reaction-Diffusion system for 2 scalars.
-4. Head to User-Defined tab and add gray_scott.c file as compiled build using libudf and load. Check if udf_init is present in function hooks tab.
+4. Head to User-Defined tab and add relevant .c file as compiled build using libudf and load. Check if udf_init is present in function hooks tab.
 5. Initialize the initial conditions and use contours of u or v(in Results tab on the left side) to verify whether the initialization is correct.
 6. If everything is correct go to calculation, set time step size and amount of steps(in solution tab on the left side).
 7. Press calculate and watch pattern creation. (Currently animation is set to update every 10 time steps as it is quite memory consuming if you want to change it go to Calculation Activities and edit v-animation or create your own)
@@ -58,4 +58,8 @@ $$
 $$
 
 ## Simulation Result
-<img src="imgfiles/BW.png" alt="Pattern formation112" width="400"> **Parameters:** a = 3, b = -1, $D_u=2e-9$ $D_v=1e-8$ 
+After time T=80
+<img src="imgfiles/spiralwavesbegin.png" alt="Pattern formation112" width="400"> **Parameters:** a = 3, b = -1, $D_u=2e-9$ $D_v=1e-8$ 
+After time T=500
+<img src="imgfiles/spiralwaves.png" alt="Pattern formation112" width="400">
+
