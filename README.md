@@ -1,16 +1,6 @@
 # Ansys-Fluent-Reaction-Diffusion
 Simulation of Turing instability using Ansys fluent on a Square(where left and right border are connected and upper and lower aswell)
 
-## Gray-Scott Model
-Gray-Scott Model is a system of two partial differential equations i.e reaction-diffusion equations of the form:
-
-$$
-\begin{aligned}
-\frac{\partial u}{\partial t} &= D_u \nabla^2 u - uv^2 + F(1-u) \\
-\frac{\partial v}{\partial t} &= D_v \nabla^2 v + uv^2 - (F+k)v
-\end{aligned}
-$$
-
 ## How To Set this up in Ansys Student 2025
 1. Create new Ansys Fluent project
 2. Straight up open Setup
@@ -20,6 +10,15 @@ $$
 6. If everything is correct go to calculation, set time step size and amount of steps(in solution tab on the left side).
 7. Press calculate and watch pattern creation. (Currently animation is set to update every 10 time steps as it is quite memory consuming if you want to change it go to Calculation Activities and edit v-animation or create your own)
 
+## Gray-Scott Model
+Gray-Scott Model is a system of two partial differential equations i.e reaction-diffusion equations of the form:
+
+$$
+\begin{aligned}
+\frac{\partial u}{\partial t} &= D_u \nabla^2 u - uv^2 + F(1-u) \\
+\frac{\partial v}{\partial t} &= D_v \nabla^2 v + uv^2 - (F+k)v
+\end{aligned}
+$$
 
 ## What is Turing instability?
 Turing instability is a biological phenomenon that can be explored in systems of reaction-diffusion equations. You can read more about it and Gray-Scott model in my 2024 conference poster (in Polish) below:
