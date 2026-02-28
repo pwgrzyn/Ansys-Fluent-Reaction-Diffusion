@@ -5,7 +5,7 @@
 #define DIFF_U 2e-8
 #define DIFF_V 1e-8
 
-//F(u,v,t,x) the right hand side of the first equation du/dt
+//F(u,v,t,x) term of the right hand side of the first equation du/dt 
 DEFINE_SOURCE(u_source,c ,t ,dS , eqn)
 {
 real u=C_UDSI(c,t,0);
@@ -17,7 +17,7 @@ return source;
 
 
 }
-//G(u,v,t,x) the right hand side of the second equation i.e dv/dt
+//G(u,v,t,x) term of the right hand side of the second equation dv/dt
 DEFINE_SOURCE(v_source,c ,t ,dS , eqn)
 {
 real u=C_UDSI(c,t,0);
