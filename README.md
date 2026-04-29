@@ -46,16 +46,67 @@ About parameters which generate interesting spatial patterns you can read [Here]
 
 There are more reaction diffusion systems however Gray-Scott is quite popular it is not easy to find parameters to create interesing patterns in other models. In order to change model you need to update source terms in the file gray_scott.c
 
-## Spiral-Waves model
-Mathematical model of nonlinear oscilator. Levels of u and v here describe deviations from the stationarity. Read more about in Mathematical Biology
-II: Spatial Models and Biomedical Applications Third Edition by J.D. Murray or [Here](https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction). The model is of form:
+
+## The Belousev-Zhabotinsky reaction
+The Belousev-Zhaboitnsky reaction is described by following chemical equations:
 
 $$
 \begin{aligned}
-\frac{\partial u}{\partial t} &= D_u \nabla^2 u +au - (u+bv)(u^2+v^2) \\
-\frac{\partial v}{\partial t} &= D_v \nabla^2 v + av + (bu-v)(u^2+v^2)
+\text{BrO}_3^- + \text{Br}^- + 2\text{H}^+ &\xrightarrow{k_1} \text{HBrO}_2 + \text{HOBr} \\
+\text{HBrO}_2 + \text{Br}^- + \text{H}^+ &\xrightarrow{k_2} 2\text{HOBr} \\
+\text{BrO}_3^- + \text{HBrO}_2 + \text{H}^+ + 2\text{M}^{2+} &\xrightarrow{k_3} 2\text{HBrO}_2 + 2\text{M}^{3+} + \text{H}_2\text{O} \\
+2\text{HBrO}_2 &\xrightarrow{k_4} \text{BrO}_3^- + \text{HOBr} + \text{H}^+ \\
+2\text{M}^{3+} + \text{MA} + \text{BrMA} &\xrightarrow{k_5} f\text{Br}^- + 2\text{M}^{2+} + \text{Other products.}
 \end{aligned}
 $$
 
-## Simulation Result
-<img src="imgfiles/BW.png" alt="Pattern formation112" width="400"> **Parameters:** a = 3, b = -1, $D_u=2e-9$ $D_v=1e-8$ 
+The mechanism involves three main processes: Autocatalysis of bromide acid equation 3, inhibition by bromide ion equation 1 and 2, resetting the cycle equation 4 and 5.
+
+With substitution 
+
+$$ 
+A=BrO_3^-, W=Br^-, H=H^+, U=HBrO_2, P=HOBr, V=\text{ oxidized form of catalyst} , B=MA+BrMA
+$$
+
+we obtain the system
+
+$$
+\begin{aligned}
+\mathbf{A} + \mathbf{W} + 2\mathbf{H} &\xrightarrow{k_1} \mathbf{U} + \mathbf{P} \\
+\mathbf{U} + \mathbf{W} + \mathbf{H} &\xrightarrow{k_2} 2\mathbf{P} \\
+\mathbf{A} + \mathbf{U} + \mathbf{H} &\xrightarrow{k_3} 2\mathbf{U} + 2\mathbf{V} \\
+2\mathbf{U} &\xrightarrow{k_4} \mathbf{A} + \mathbf{P} + \mathbf{H} \\
+\mathbf{V} + \mathbf{B} &\xrightarrow{k_5} \frac{1}{2}f\mathbf{W}
+\end{aligned}
+$$
+
+where MA denotes malonic acid. A and B are major reactants hence their concentrations are considered constant respectively noted as a and b. Reaction is carried out in acidic enviroment so we have excess of hydrogen ions and any time and we consider H constant aswell.
+
+We obtain following system of differential equations 
+
+$$
+\begin{aligned}
+\frac{dU}{dT} &= k_1 a W H^2 - k_2 U W H + k_3 b U H - 2k_4 U^2 \\
+\frac{dV}{dT} &= 2k_3 a U H - k_5 b V \\
+\frac{dW}{dT} &= -k_1 a W H^2 - k_2 U W H + \frac{1}{2} k_5 f b V
+\end{aligned}
+$$
+
+By substitution 
+
+$$
+t=k_5bT, u=\frac{k_3aU}{K_5b}, v=\frac{k_1k_3a^2V}{k_2k_5b}, w=\frac{k_2W}{k_3a}, \varepsilon=\frac{k_5b}{h_0k_3a}, \varepsilon'=\frac{2k_4k_5b}{h_0^2k_2k_3b}, q=\frac{2k_1k_4}{k_2k_3}, h=\frac{2k_1k_3a^2}{k_2k_5}H=\frac{1}{h_0}H
+$$
+
+we obtain dimensionaless system given by 
+
+$$
+\begin{aligned}
+\varepsilon \frac{du}{dt} &= \frac{1}{2} w h^2 - u w h + u h - q u^2 \\
+\frac{dv}{dt} &= u h - v \\
+\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v
+\end{aligned}
+$$
+
+## Simulations
+
