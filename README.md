@@ -110,3 +110,4 @@ $$
 
 ## Simulations
 
+![HBrO](imgfiles/u-animation.gif)
