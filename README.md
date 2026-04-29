@@ -68,7 +68,7 @@ $$
 A=BrO_3^-, W=Br^-, H=H^+, U=HBrO_2, P=HOBr, V=\text{ oxidized form of catalyst} , B=MA+BrMA
 $$
 
-we obtain the system
+we obtain the general form of the system
 
 $$
 \begin{aligned}
@@ -82,7 +82,7 @@ $$
 
 where MA denotes malonic acid. A and B are major reactants hence their concentrations are considered constant respectively noted as a and b. Reaction is carried out in acidic enviroment so we have excess of hydrogen ions and any time and we consider H constant aswell.
 
-We obtain following system of differential equations 
+Since we are mostly interested in change of U,V and W from chemical equations we obtain following system of differential equations 
 
 $$
 \begin{aligned}
