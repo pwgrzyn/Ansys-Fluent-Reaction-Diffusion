@@ -1,5 +1,5 @@
 # Ansys-Fluent-Reaction-Diffusion
-Simulation of Turing instability using Ansys fluent on a Square(where left and right border are connected and upper and lower aswell)
+Simulations of reaction diffusion models. Autocatalytic reaction given by Gray-Scott model showing the phenomenon of Turing Instability and autocatalytic Belousev-Zhabotinsky reaction. Simulations are made on a domain being a square(58mm) with periodic boundary conditions meaning that the substance freely flows through the boundary and appears on the other side. 
 
 ## How To Set this up in Ansys Student 2025
 1. Create new Ansys Fluent project
@@ -98,7 +98,7 @@ $$
 t=k_5bT, u=\frac{k_3aU}{K_5b}, v=\frac{k_1k_3a^2V}{k_2k_5b}, w=\frac{k_2W}{k_3a}, \varepsilon=\frac{k_5b}{h_0k_3a}, \varepsilon'=\frac{2k_4k_5b}{h_0^2k_2k_3b}, q=\frac{2k_1k_4}{k_2k_3}, h=\frac{2k_1k_3a^2}{k_2k_5}H=\frac{1}{h_0}H
 $$
 
-we obtain dimensionaless system given by 
+we obtain dimensionless system given by 
 
 $$
 \begin{aligned}
