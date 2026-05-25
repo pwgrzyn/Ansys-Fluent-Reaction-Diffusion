@@ -98,13 +98,13 @@ $$
 t=k_5bT, u=\frac{k_3aU}{K_5b}, v=\frac{k_1k_3a^2V}{k_2k_5b}, w=\frac{k_2W}{k_3a}, \varepsilon=\frac{k_5b}{h_0k_3a}, \varepsilon'=\frac{2k_4k_5b}{h_0^2k_2k_3b}, q=\frac{2k_1k_4}{k_2k_3}, h=\frac{2k_1k_3a^2}{k_2k_5}H=\frac{1}{h_0}H
 $$
 
-we obtain dimensionless system given by 
+adding the diffusion therm we obtain dimensionless system given by 
 
 $$
 \begin{aligned}
-\varepsilon \frac{du}{dt} &= \frac{1}{2} w h^2 - u w h + u h - q u^2 \\
-\frac{dv}{dt} &= u h - v \\
-\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v
+\varepsilon \frac{du}{dt} &= \frac{1}{2} w h^2 - u w h + u h - q u^2 +D_u\nabla^2u\\
+\frac{dv}{dt} &= u h - v +D_v\nabla^2v \\
+\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v+D_W\nabla^2w
 \end{aligned}
 $$
 
