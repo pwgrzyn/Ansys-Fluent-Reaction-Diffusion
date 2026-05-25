@@ -98,7 +98,7 @@ $$
 t=k_5bT, u=\frac{k_3aU}{K_5b}, v=\frac{k_1k_3a^2V}{k_2k_5b}, w=\frac{k_2W}{k_3a}, \varepsilon=\frac{k_5b}{h_0k_3a}, \varepsilon'=\frac{2k_4k_5b}{h_0^2k_2k_3b}, q=\frac{2k_1k_4}{k_2k_3}, h=\frac{2k_1k_3a^2}{k_2k_5}H=\frac{1}{h_0}H
 $$
 
-adding the diffusion therm we obtain dimensionless system given by 
+and addintion of the diffusion therm we obtain dimensionless system given by 
 
 $$
 \begin{aligned}
