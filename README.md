@@ -104,7 +104,7 @@ $$
 \begin{aligned}
 \varepsilon \frac{du}{dt} &= \frac{1}{2} w h^2 - u w h + u h - q u^2 +D_u\nabla^2u\\
 \frac{dv}{dt} &= u h - v +D_v\nabla^2v \\
-\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v+D_W\nabla^2w
+\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v+D_w\nabla^2w
 \end{aligned}
 $$
 
