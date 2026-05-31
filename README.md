@@ -48,7 +48,7 @@ There are more reaction diffusion systems however Gray-Scott is quite popular it
 
 
 ## The Belousev-Zhabotinsky reaction
-The Belousev-Zhaboitnsky reaction is described by following chemical equations:
+The Belousev-Zhaboitnsky reaction can be described with following chemical equations:
 
 $$
 \begin{aligned}
