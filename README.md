@@ -16,7 +16,9 @@ Gray-Scott Model is a system of two partial differential equations i.e reaction-
 $$
 \begin{aligned}
 \frac{\partial u}{\partial t} &= D_u \nabla^2 u - uv^2 + F(1-u) \\
-\frac{\partial v}{\partial t} &= D_v \nabla^2 v + uv^2 - (F+k)v
+\frac{\partial v}{\partial t} &= D_v \nabla^2 v + uv^2 - (F+k)v \\
+\frac{\partial u}{\partial n} &=0 \\
+\frac{\partial v}{\partial n} &=0 
 \end{aligned}
 $$
 
@@ -98,13 +100,16 @@ $$
 t=k_5bT, u=\frac{k_3aU}{K_5b}, v=\frac{k_1k_3a^2V}{k_2k_5b}, w=\frac{k_2W}{k_3a}, \varepsilon=\frac{k_5b}{h_0k_3a}, \varepsilon'=\frac{2k_4k_5b}{h_0^2k_2k_3b}, q=\frac{2k_1k_4}{k_2k_3}, h=\frac{2k_1k_3a^2}{k_2k_5}H=\frac{1}{h_0}H
 $$
 
-and addition of the diffusion therm we obtain dimensionless system given by 
+and addition of the diffusion term and boundary conditions we obtain dimensionless system given by 
 
 $$
 \begin{aligned}
 \varepsilon \frac{du}{dt} &= \frac{1}{2} w h^2 - u w h + u h - q u^2 +D_u\nabla^2u\\
 \frac{dv}{dt} &= u h - v +D_v\nabla^2v \\
-\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v+D_w\nabla^2w
+\varepsilon' \frac{dw}{dt} &= -q w h^2 - 2q u w h + 2q f v+D_w\nabla^2w \\
+\frac{\partial u}{\partial n} &=0 \\
+\frac{\partial v}{\partial n} &=0 \\
+\frac{\partial w}{\partial n} &=0 \\
 \end{aligned}
 $$
 
